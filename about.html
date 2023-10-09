@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cee46afb86.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"  href="css/styles.css"/>
+</head>
+
+<body>
+    <!--::Section:Header::-->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html">
+                <img src="images/logo.png" alt="this is university logo"/>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-solid fa-xmark" onclick="hideMenu()"> </i>
+                <ul>
+                    <li> <a href="">HOME</a></li>
+                    <li> <a href="">ABOUT</a></li>
+                    <li> <a href="">COURSE</a></li>
+                    <li> <a href="">BLOG</a></li>
+                    <li> <a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-solid fa-bars" onclick="showMenu()"> </i>
+        </nav>
+         <h1>About Us</h1>
+    </section>
+
+      <!--:::About us Content:::-->
+      <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the world largest University</h1>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate impedit libero tenetur ipsam est nemo a, quod dolore quas, modi cumque reiciendis. Itaque obcaecati explicabo magni non repellendus, id tempora.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate impedit libero tenetur ipsam est nemo a, quod dolore quas, modi cumque reiciendis. Itaque obcaecati explicabo magni non repellendus, id tempora.
+                </p>
+                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="images/about.jpg"  alt="about us images">
+            </div>
+        </div>
+      </section>
+
+
+
+        <!--:::Footer:::-->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Ipsum est laborum illo nam pariatur nihil voluptate eligendi <br>
+            illum iusto quisquam, nobis fugit libero veritatis perspiciatis.
+        </p>
+        <div class="icon">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Mehedi44</p>
+    </section>    
+
+    <!--Javascripts for toggle menue-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu (){
+            navLinks.style.right= "0";
+        }
+
+        function hideMenu (){
+            navLinks.style.right= "-200px";
+        } 
+    </script>
+
+</body>
+
+</html>
